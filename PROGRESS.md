@@ -7,9 +7,9 @@ Mark a chunk `[x]` only once its note is committed. The line after each chunk li
 
 ## Chunks
 
-- [ ] **C01** `entry-config`: Entry point, launcher, config, reporting (13 files, ~3.0k lines)
+- [x] **C01** `entry-config`: Entry point, launcher, config, reporting (13 files, ~3.0k lines)
   - files: `crates/xcl/build.rs`, `crates/xcl/src/config.rs`, `crates/xcl/src/host.rs`, `crates/xcl/src/inspect.rs`, `crates/xcl/src/launcher.rs`, `crates/xcl/src/lib.rs`, `crates/xcl/src/log.rs`, `crates/xcl/src/main.rs`, `crates/xcl/src/manifest.rs`, `crates/xcl/src/preflight.rs`, `crates/xcl/src/report.rs`, `crates/xcl/src/state.rs`, `crates/xcl/src/util.rs`
-- [ ] **C02** `pe-loader`: PE loading, import resolution, stubs, TLS, exceptions (8 files, ~4.3k lines)
+- [x] **C02** `pe-loader`: PE loading, import resolution, stubs, TLS, exceptions (8 files, ~4.3k lines)
   - files: `crates/xcl/src/eh.rs`, `crates/xcl/src/hooks.rs`, `crates/xcl/src/loader.rs`, `crates/xcl/src/modules.rs`, `crates/xcl/src/pe.rs`, `crates/xcl/src/resolver.rs`, `crates/xcl/src/stubs.rs`, `crates/xcl/src/tls.rs`
 - [ ] **C03** `vfs-disasm`: Virtual file system, file hooks, RPF archives, disassembly (6 files, ~3.9k lines)
   - files: `crates/xcl/src/disasm.rs`, `crates/xcl/src/insn.rs`, `crates/xcl/src/rpf.rs`, `crates/xcl/src/rpf_probe.rs`, `crates/xcl/src/vfs.rs`, `crates/xcl/src/vfs_hooks.rs`
@@ -77,3 +77,4 @@ Mark a chunk `[x]` only once its note is committed. The line after each chunk li
 ## Run log
 
 <!-- one line per run: date, chunks done, anything left half-done -->
+- 2026-11-24: C01, C02 done (7.3k lines read). Unclear: how a non-relocatable game exe avoids xcl.exe's own image base (see C02 open questions).
